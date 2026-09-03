@@ -70,7 +70,7 @@ The machine exporting the app needs access to the Apple Developer team `8S2Y83DC
 
 - Xcode IDE build succeeded through the Xcode build tool.
 - Command-line `xcodebuild archive` is currently blocked on this Mac by Xcode 27 beta macro server errors such as `SwiftDataMacros.PersistentModelMacro` and `SwiftUIMacros.StateMacro` reporting `swift-plugin-server produced malformed response`.
-- `security find-identity -v -p codesigning` did not list a `Developer ID Application` identity.
+- `security find-identity -v -p codesigning` lists `Developer ID Application: Jyun Kim (8S2Y83DCGM)`.
 - A `BizNoteMac` notarytool keychain profile was not found.
 
-Resolve the Xcode beta/toolchain issue and install the Developer ID certificate before producing the first public direct-distribution build.
+Resolve the Xcode beta/toolchain issue and create the notarytool profile before producing the first public direct-distribution build.
