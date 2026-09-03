@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A7621A7240B321FD80222EE /* NoteCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821B1425910D9291DB76B91D /* NoteCategory.swift */; };
+		1465D4C43A408DC508DBBED9 /* CustomCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82581E3BFA7001949C9386EE /* CustomCategory.swift */; };
+		1A3AAB2A85EF5D95192F01F9 /* NSImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BB408A6458B5E09022466 /* NSImage+Extensions.swift */; };
+		1C0B382164C8031ADACBF31B /* SettingsICloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A23A16BF16D33E6C655E03F /* SettingsICloudView.swift */; };
+		2E5A3DE0D8EF438361B92A65 /* WorkLogTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9189CC5AF32378A99BAB9955 /* WorkLogTemplateView.swift */; };
+		33CD17A2E115862F587B6076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB08E75B66C9E29D5A221829 /* Assets.xcassets */; };
+		373CEFBA19B6AA1AE669D634 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D32C1F568DBD1BB404CF8A /* EmptyStateView.swift */; };
+		3F8CB95F5B47F472B21AB208 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413BEBE05BF6595110236438 /* SidebarView.swift */; };
+		401172F6BC9C96D019D31103 /* AttachmentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3DE1D13E2DF0C5F85DC45 /* AttachmentStorage.swift */; };
+		451C7864E9EDF9641E982AB3 /* BusinessCardImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBE6D90E6E1838907A85553 /* BusinessCardImportView.swift */; };
+		504E0DCFAED9DD9BEF5D69B9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D7E0D64B8320022A98AFB4 /* Note.swift */; };
+		553183D93045A8E500E228C5 /* AutoHeightTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553183D83045A8E500E228C5 /* AutoHeightTextEditor.swift */; };
+		5577F13530408B0200F4E0AD /* BusinessCardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F13430408B0200F4E0AD /* BusinessCardDetailView.swift */; };
+		5577F1373041C76D00F4E0AD /* MonthlyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F1363041C76D00F4E0AD /* MonthlyCalendarView.swift */; };
+		5577F1393041C78800F4E0AD /* ExhibitionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F1383041C78800F4E0AD /* ExhibitionDetailView.swift */; };
+		5577F13B3041C7EB00F4E0AD /* CircleCheckToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F13A3041C7EB00F4E0AD /* CircleCheckToggleStyle.swift */; };
+		5577F13F3041F0EE00F4E0AD /* CalendarReminderSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F13E3041F0EE00F4E0AD /* CalendarReminderSyncService.swift */; };
+		5577F14130426D6000F4E0AD /* BusinessCardOCRReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F14030426D6000F4E0AD /* BusinessCardOCRReview.swift */; };
+		5577F14330426DDC00F4E0AD /* BusinessCardDuplicateDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F14230426DDC00F4E0AD /* BusinessCardDuplicateDetector.swift */; };
+		5577F1453043252400F4E0AD /* BusinessCardCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F1443043252400F4E0AD /* BusinessCardCameraController.swift */; };
+		5577F1473043253E00F4E0AD /* BusinessCardCameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F1463043253E00F4E0AD /* BusinessCardCameraCaptureView.swift */; };
+		5577F14930433BDF00F4E0AD /* ExhibitionAddWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F14830433BDF00F4E0AD /* ExhibitionAddWindowView.swift */; };
+		5577F14B304411FF00F4E0AD /* CircularToolbarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F14A304411FF00F4E0AD /* CircularToolbarIcon.swift */; };
+		5577F14D3044185B00F4E0AD /* NewNoteTemplateSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F14C3044185B00F4E0AD /* NewNoteTemplateSheetView.swift */; };
+		5577F14F30441FB300F4E0AD /* CustomNoteTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F14E30441FB300F4E0AD /* CustomNoteTemplate.swift */; };
+		5577F1513044202F00F4E0AD /* CustomNoteTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F1503044202F00F4E0AD /* CustomNoteTemplateView.swift */; };
+		5577F15330445AB000F4E0AD /* BusinessCardImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577F15230445AB000F4E0AD /* BusinessCardImageProcessor.swift */; };
+		5598C332303D6CA400C46FE1 /* ContactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598C331303D6CA400C46FE1 /* ContactsService.swift */; };
+		5598C334303D6CD900C46FE1 /* ContactPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598C333303D6CD900C46FE1 /* ContactPickerButton.swift */; };
+		5598C336303D6D2200C46FE1 /* LocationPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598C335303D6D2200C46FE1 /* LocationPickerSheet.swift */; };
+		5598C338303D6DF500C46FE1 /* MinimalZipWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598C337303D6DF500C46FE1 /* MinimalZipWriter.swift */; };
+		5598C33A303D6E1C00C46FE1 /* PDFExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598C339303D6E1C00C46FE1 /* PDFExportService.swift */; };
+		5598C33C303DF7F500C46FE1 /* CardLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598C33B303DF7F500C46FE1 /* CardLinkButton.swift */; };
+		5598C33E303DF86200C46FE1 /* BusinessCardManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598C33D303DF86200C46FE1 /* BusinessCardManagerView.swift */; };
+		5598C340303DFBDA00C46FE1 /* TaskFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598C33F303DFBDA00C46FE1 /* TaskFormView.swift */; };
+		55B3D93E303B4DA8006D69CF /* ExhibitionManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B3D93D303B4DA8006D69CF /* ExhibitionManagerView.swift */; };
+		58356BDD617EDBB9A55BF869 /* BusinessCardResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E993A31FD19364779CE4A72 /* BusinessCardResultView.swift */; };
+		5B6DCBB518DA471C15AE9C9E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 38D045A8B37556DF74DB9E28 /* Localizable.xcstrings */; };
+		6923C33ACAA9305D23B9261B /* NoteTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF60E6FA85B7CAA319E905F /* NoteTemplate.swift */; };
+		71B8302EE6244A09A9817D8D /* ExportSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E447DB241C24E7FE9E3FC5E /* ExportSheetView.swift */; };
+		7215B7F821D9BDB1FA2864AC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E89280154D8177E9B938661 /* SettingsView.swift */; };
+		8BA6AA3041F641B39BEE7131 /* SyncStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C3A4BDB211EE6DDFEA5AA /* SyncStatusView.swift */; };
+		90B9AFB527BB8B7CEDA06C00 /* ExhibitionPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CBD08D7FC1A45A284DAFAC /* ExhibitionPreset.swift */; };
+		956B082C2B87A1D437636CBD /* SettingsExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A577C2F490F95F74AF2ECC /* SettingsExportView.swift */; };
+		9601A8349302D670E6FB59FF /* BusinessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878932104108854AF9B1E24 /* BusinessCard.swift */; };
+		A5772F640BE3185CA4BB0DA9 /* BusinessCardPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D830F4A583BAD78B390EEBCB /* BusinessCardPanelView.swift */; };
+		A746A84FCBE1CD59C4E6FC93 /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADBCEECABBB0B5B6D6CDF6 /* NoteListView.swift */; };
+		AECE00021BAAA6DD2C7264F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EDFB52D56B8A9D878DCE8F /* AppDelegate.swift */; };
+		B2CA9255325D14608E15C627 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA3C6262BD413584AA77D6C /* ContentView.swift */; };
+		C2846D9B3531D8678D499FA7 /* MeetingMinutesTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736413830219B7E3CAFDFF49 /* MeetingMinutesTemplateView.swift */; };
+		CE088CC9C24D212EB27DE710 /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C58321E70C7950D8AD4E5A0 /* CloudSyncService.swift */; };
+		D367230C18B3B5A58BDA19F6 /* ExcelExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85203768173058CCDD338704 /* ExcelExportService.swift */; };
+		D6AC7E255E557A2451B88581 /* BizNoteMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3920DDAEE200F05F4775AD /* BizNoteMacApp.swift */; };
+		E5033AC89452E0E3F26BDCA1 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A94D07692DA8ED15F65ECA /* NoteDetailView.swift */; };
+		EC10F2B9AF641D170EC8A7FA /* ExhibitionTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE245297787C315F41BA88D7 /* ExhibitionTemplateView.swift */; };
+		F07BB50B71E1826163732A6A /* BusinessCardParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE337CAAF85829BD9AB43B51 /* BusinessCardParser.swift */; };
+		FE21A195D3F98BE383599135 /* TagEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF97553C7931C46F44524E7 /* TagEditorView.swift */; };
+		FE410FAEDC261312213CDCA5 /* AppCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD5A89F0A2C44139B72A53F /* AppCommands.swift */; };
+		FF560235C5CAD20D00EF319B /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61992A681AF0A1E135F11D5D /* OCRService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07D32C1F568DBD1BB404CF8A /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		0CF97553C7931C46F44524E7 /* TagEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEditorView.swift; sourceTree = "<group>"; };
+		0EF60E6FA85B7CAA319E905F /* NoteTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTemplate.swift; sourceTree = "<group>"; };
+		13CBD08D7FC1A45A284DAFAC /* ExhibitionPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionPreset.swift; sourceTree = "<group>"; };
+		16A94D07692DA8ED15F65ECA /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		2A23A16BF16D33E6C655E03F /* SettingsICloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsICloudView.swift; sourceTree = "<group>"; };
+		2CD5A89F0A2C44139B72A53F /* AppCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommands.swift; sourceTree = "<group>"; };
+		38D045A8B37556DF74DB9E28 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		391517DFDCAB324AD510B2B7 /* BizNoteMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BizNoteMac.entitlements; sourceTree = "<group>"; };
+		3D44F822E4F98AD4E4CA7D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3E993A31FD19364779CE4A72 /* BusinessCardResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardResultView.swift; sourceTree = "<group>"; };
+		413BEBE05BF6595110236438 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		4878932104108854AF9B1E24 /* BusinessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCard.swift; sourceTree = "<group>"; };
+		553183D83045A8E500E228C5 /* AutoHeightTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightTextEditor.swift; sourceTree = "<group>"; };
+		5577F13430408B0200F4E0AD /* BusinessCardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardDetailView.swift; sourceTree = "<group>"; };
+		5577F1363041C76D00F4E0AD /* MonthlyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCalendarView.swift; sourceTree = "<group>"; };
+		5577F1383041C78800F4E0AD /* ExhibitionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetailView.swift; sourceTree = "<group>"; };
+		5577F13A3041C7EB00F4E0AD /* CircleCheckToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCheckToggleStyle.swift; sourceTree = "<group>"; };
+		5577F13E3041F0EE00F4E0AD /* CalendarReminderSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarReminderSyncService.swift; sourceTree = "<group>"; };
+		5577F14030426D6000F4E0AD /* BusinessCardOCRReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardOCRReview.swift; sourceTree = "<group>"; };
+		5577F14230426DDC00F4E0AD /* BusinessCardDuplicateDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardDuplicateDetector.swift; sourceTree = "<group>"; };
+		5577F1443043252400F4E0AD /* BusinessCardCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardCameraController.swift; sourceTree = "<group>"; };
+		5577F1463043253E00F4E0AD /* BusinessCardCameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardCameraCaptureView.swift; sourceTree = "<group>"; };
+		5577F14830433BDF00F4E0AD /* ExhibitionAddWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionAddWindowView.swift; sourceTree = "<group>"; };
+		5577F14A304411FF00F4E0AD /* CircularToolbarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularToolbarIcon.swift; sourceTree = "<group>"; };
+		5577F14C3044185B00F4E0AD /* NewNoteTemplateSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteTemplateSheetView.swift; sourceTree = "<group>"; };
+		5577F14E30441FB300F4E0AD /* CustomNoteTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNoteTemplate.swift; sourceTree = "<group>"; };
+		5577F1503044202F00F4E0AD /* CustomNoteTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNoteTemplateView.swift; sourceTree = "<group>"; };
+		5577F15230445AB000F4E0AD /* BusinessCardImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardImageProcessor.swift; sourceTree = "<group>"; };
+		5598C331303D6CA400C46FE1 /* ContactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsService.swift; sourceTree = "<group>"; };
+		5598C333303D6CD900C46FE1 /* ContactPickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPickerButton.swift; sourceTree = "<group>"; };
+		5598C335303D6D2200C46FE1 /* LocationPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerSheet.swift; sourceTree = "<group>"; };
+		5598C337303D6DF500C46FE1 /* MinimalZipWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalZipWriter.swift; sourceTree = "<group>"; };
+		5598C339303D6E1C00C46FE1 /* PDFExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExportService.swift; sourceTree = "<group>"; };
+		5598C33B303DF7F500C46FE1 /* CardLinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLinkButton.swift; sourceTree = "<group>"; };
+		5598C33D303DF86200C46FE1 /* BusinessCardManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardManagerView.swift; sourceTree = "<group>"; };
+		5598C33F303DFBDA00C46FE1 /* TaskFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFormView.swift; sourceTree = "<group>"; };
+		55B3D93D303B4DA8006D69CF /* ExhibitionManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionManagerView.swift; sourceTree = "<group>"; };
+		55F8591630490900006849CF /* ExportOptions-DeveloperID.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExportOptions-DeveloperID.plist"; sourceTree = "<group>"; };
+		55F8591730490900006849CF /* DirectDistribution.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DirectDistribution.md; sourceTree = "<group>"; };
+		5BBE6D90E6E1838907A85553 /* BusinessCardImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardImportView.swift; sourceTree = "<group>"; };
+		5C58321E70C7950D8AD4E5A0 /* CloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncService.swift; sourceTree = "<group>"; };
+		5E89280154D8177E9B938661 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		61992A681AF0A1E135F11D5D /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		668C3A4BDB211EE6DDFEA5AA /* SyncStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusView.swift; sourceTree = "<group>"; };
+		736413830219B7E3CAFDFF49 /* MeetingMinutesTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingMinutesTemplateView.swift; sourceTree = "<group>"; };
+		75EDFB52D56B8A9D878DCE8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EA3DE1D13E2DF0C5F85DC45 /* AttachmentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentStorage.swift; sourceTree = "<group>"; };
+		8140558BAFD589CE4036DD99 /* BizNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BizNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		821B1425910D9291DB76B91D /* NoteCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCategory.swift; sourceTree = "<group>"; };
+		82581E3BFA7001949C9386EE /* CustomCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCategory.swift; sourceTree = "<group>"; };
+		85203768173058CCDD338704 /* ExcelExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelExportService.swift; sourceTree = "<group>"; };
+		8E447DB241C24E7FE9E3FC5E /* ExportSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSheetView.swift; sourceTree = "<group>"; };
+		8F3920DDAEE200F05F4775AD /* BizNoteMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BizNoteMacApp.swift; sourceTree = "<group>"; };
+		9189CC5AF32378A99BAB9955 /* WorkLogTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkLogTemplateView.swift; sourceTree = "<group>"; };
+		A39BB408A6458B5E09022466 /* NSImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Extensions.swift"; sourceTree = "<group>"; };
+		B8D7E0D64B8320022A98AFB4 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CB08E75B66C9E29D5A221829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D830F4A583BAD78B390EEBCB /* BusinessCardPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardPanelView.swift; sourceTree = "<group>"; };
+		DE245297787C315F41BA88D7 /* ExhibitionTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionTemplateView.swift; sourceTree = "<group>"; };
+		DE337CAAF85829BD9AB43B51 /* BusinessCardParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardParser.swift; sourceTree = "<group>"; };
+		DFADBCEECABBB0B5B6D6CDF6 /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		E2A577C2F490F95F74AF2ECC /* SettingsExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsExportView.swift; sourceTree = "<group>"; };
+		EBA3C6262BD413584AA77D6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		18228124757E1266CC0BDDBF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E2A577C2F490F95F74AF2ECC /* SettingsExportView.swift */,
+				2A23A16BF16D33E6C655E03F /* SettingsICloudView.swift */,
+				5E89280154D8177E9B938661 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1B1930917115C20A2832D5E1 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				8E447DB241C24E7FE9E3FC5E /* ExportSheetView.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		2316D5A786B4AB387F837F57 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				07D32C1F568DBD1BB404CF8A /* EmptyStateView.swift */,
+				668C3A4BDB211EE6DDFEA5AA /* SyncStatusView.swift */,
+				5598C333303D6CD900C46FE1 /* ContactPickerButton.swift */,
+				5598C335303D6D2200C46FE1 /* LocationPickerSheet.swift */,
+				5598C33F303DFBDA00C46FE1 /* TaskFormView.swift */,
+				5577F13A3041C7EB00F4E0AD /* CircleCheckToggleStyle.swift */,
+				5577F14A304411FF00F4E0AD /* CircularToolbarIcon.swift */,
+				553183D83045A8E500E228C5 /* AutoHeightTextEditor.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		41464069744C7495A35D328A = {
+			isa = PBXGroup;
+			children = (
+				B34D590B8D1A1E08BC6F037E /* BizNoteMac */,
+				8AAFBD747B96103C6042C490 /* Products */,
+				55F85915304908D5006849CF /* Distribution */,
+			);
+			sourceTree = "<group>";
+		};
+		53F51A3F9A4E97DB41EC7400 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A39BB408A6458B5E09022466 /* NSImage+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		55B3D93C303B4DA8006D69CF /* Exhibitions */ = {
+			isa = PBXGroup;
+			children = (
+				55B3D93D303B4DA8006D69CF /* ExhibitionManagerView.swift */,
+				5577F1363041C76D00F4E0AD /* MonthlyCalendarView.swift */,
+				5577F1383041C78800F4E0AD /* ExhibitionDetailView.swift */,
+				5577F14830433BDF00F4E0AD /* ExhibitionAddWindowView.swift */,
+			);
+			path = Exhibitions;
+			sourceTree = "<group>";
+		};
+		55F85915304908D5006849CF /* Distribution */ = {
+			isa = PBXGroup;
+			children = (
+				55F8591630490900006849CF /* ExportOptions-DeveloperID.plist */,
+				55F8591730490900006849CF /* DirectDistribution.md */,
+			);
+			path = Distribution;
+			sourceTree = "<group>";
+		};
+		58DE66A1ECC20EF172A7E800 /* NoteList */ = {
+			isa = PBXGroup;
+			children = (
+				DFADBCEECABBB0B5B6D6CDF6 /* NoteListView.swift */,
+				5577F14C3044185B00F4E0AD /* NewNoteTemplateSheetView.swift */,
+			);
+			path = NoteList;
+			sourceTree = "<group>";
+		};
+		6DDF5E661E5D5D61A90E9AA1 /* NoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CF160BAB8FF640CCB79A2FFC /* Templates */,
+				16A94D07692DA8ED15F65ECA /* NoteDetailView.swift */,
+				0CF97553C7931C46F44524E7 /* TagEditorView.swift */,
+			);
+			path = NoteDetail;
+			sourceTree = "<group>";
+		};
+		823BF47A22E2BB843EABF539 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7EA3DE1D13E2DF0C5F85DC45 /* AttachmentStorage.swift */,
+				DE337CAAF85829BD9AB43B51 /* BusinessCardParser.swift */,
+				5C58321E70C7950D8AD4E5A0 /* CloudSyncService.swift */,
+				85203768173058CCDD338704 /* ExcelExportService.swift */,
+				61992A681AF0A1E135F11D5D /* OCRService.swift */,
+				5598C331303D6CA400C46FE1 /* ContactsService.swift */,
+				5598C337303D6DF500C46FE1 /* MinimalZipWriter.swift */,
+				5598C339303D6E1C00C46FE1 /* PDFExportService.swift */,
+				5577F13E3041F0EE00F4E0AD /* CalendarReminderSyncService.swift */,
+				5577F14030426D6000F4E0AD /* BusinessCardOCRReview.swift */,
+				5577F14230426DDC00F4E0AD /* BusinessCardDuplicateDetector.swift */,
+				5577F1443043252400F4E0AD /* BusinessCardCameraController.swift */,
+				5577F15230445AB000F4E0AD /* BusinessCardImageProcessor.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8AAFBD747B96103C6042C490 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8140558BAFD589CE4036DD99 /* BizNote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9290EAEFABE89041E9DCF0C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB08E75B66C9E29D5A221829 /* Assets.xcassets */,
+				38D045A8B37556DF74DB9E28 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B34D590B8D1A1E08BC6F037E /* BizNoteMac */ = {
+			isa = PBXGroup;
+			children = (
+				BDE5F9D68975AB16FD626D7D /* Models */,
+				9290EAEFABE89041E9DCF0C4 /* Resources */,
+				823BF47A22E2BB843EABF539 /* Services */,
+				53F51A3F9A4E97DB41EC7400 /* Utilities */,
+				DFB920F426AD208C73B80B64 /* Views */,
+				2CD5A89F0A2C44139B72A53F /* AppCommands.swift */,
+				75EDFB52D56B8A9D878DCE8F /* AppDelegate.swift */,
+				391517DFDCAB324AD510B2B7 /* BizNoteMac.entitlements */,
+				8F3920DDAEE200F05F4775AD /* BizNoteMacApp.swift */,
+				EBA3C6262BD413584AA77D6C /* ContentView.swift */,
+				3D44F822E4F98AD4E4CA7D4F /* Info.plist */,
+			);
+			path = BizNoteMac;
+			sourceTree = "<group>";
+		};
+		BDE5F9D68975AB16FD626D7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4878932104108854AF9B1E24 /* BusinessCard.swift */,
+				82581E3BFA7001949C9386EE /* CustomCategory.swift */,
+				13CBD08D7FC1A45A284DAFAC /* ExhibitionPreset.swift */,
+				B8D7E0D64B8320022A98AFB4 /* Note.swift */,
+				821B1425910D9291DB76B91D /* NoteCategory.swift */,
+				0EF60E6FA85B7CAA319E905F /* NoteTemplate.swift */,
+				5577F14E30441FB300F4E0AD /* CustomNoteTemplate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF160BAB8FF640CCB79A2FFC /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				DE245297787C315F41BA88D7 /* ExhibitionTemplateView.swift */,
+				736413830219B7E3CAFDFF49 /* MeetingMinutesTemplateView.swift */,
+				9189CC5AF32378A99BAB9955 /* WorkLogTemplateView.swift */,
+				5577F1503044202F00F4E0AD /* CustomNoteTemplateView.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		DFB920F426AD208C73B80B64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F08CD737602A0885AF3B6E38 /* BusinessCard */,
+				1B1930917115C20A2832D5E1 /* Export */,
+				6DDF5E661E5D5D61A90E9AA1 /* NoteDetail */,
+				58DE66A1ECC20EF172A7E800 /* NoteList */,
+				18228124757E1266CC0BDDBF /* Settings */,
+				2316D5A786B4AB387F837F57 /* Shared */,
+				FA85958FA5D3DFACA9582E44 /* Sidebar */,
+				55B3D93C303B4DA8006D69CF /* Exhibitions */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F08CD737602A0885AF3B6E38 /* BusinessCard */ = {
+			isa = PBXGroup;
+			children = (
+				5BBE6D90E6E1838907A85553 /* BusinessCardImportView.swift */,
+				D830F4A583BAD78B390EEBCB /* BusinessCardPanelView.swift */,
+				3E993A31FD19364779CE4A72 /* BusinessCardResultView.swift */,
+				5598C33B303DF7F500C46FE1 /* CardLinkButton.swift */,
+				5598C33D303DF86200C46FE1 /* BusinessCardManagerView.swift */,
+				5577F13430408B0200F4E0AD /* BusinessCardDetailView.swift */,
+				5577F1463043253E00F4E0AD /* BusinessCardCameraCaptureView.swift */,
+			);
+			path = BusinessCard;
+			sourceTree = "<group>";
+		};
+		FA85958FA5D3DFACA9582E44 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				413BEBE05BF6595110236438 /* SidebarView.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50138C21B9983E29E512CDE0 /* BizNoteMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6730F861AD4C49B0B684C10F /* Build configuration list for PBXNativeTarget "BizNoteMac" */;
+			buildPhases = (
+				CC2C9DA09EE318D03E5C651E /* Sources */,
+				CD9795EEDA96391B9DC8EA9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BizNoteMac;
+			packageProductDependencies = (
+			);
+			productName = BizNoteMac;
+			productReference = 8140558BAFD589CE4036DD99 /* BizNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64CD7FF642187410F5D79EB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					50138C21B9983E29E512CDE0 = {
+						DevelopmentTeam = 8S2Y83DCGM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1BF806F7775391556696F5C2 /* Build configuration list for PBXProject "BizNoteMac" */;
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ko,
+			);
+			mainGroup = 41464069744C7495A35D328A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8AAFBD747B96103C6042C490 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50138C21B9983E29E512CDE0 /* BizNoteMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD9795EEDA96391B9DC8EA9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33CD17A2E115862F587B6076 /* Assets.xcassets in Resources */,
+				5B6DCBB518DA471C15AE9C9E /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC2C9DA09EE318D03E5C651E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE410FAEDC261312213CDCA5 /* AppCommands.swift in Sources */,
+				5577F14330426DDC00F4E0AD /* BusinessCardDuplicateDetector.swift in Sources */,
+				AECE00021BAAA6DD2C7264F8 /* AppDelegate.swift in Sources */,
+				401172F6BC9C96D019D31103 /* AttachmentStorage.swift in Sources */,
+				D6AC7E255E557A2451B88581 /* BizNoteMacApp.swift in Sources */,
+				5598C332303D6CA400C46FE1 /* ContactsService.swift in Sources */,
+				9601A8349302D670E6FB59FF /* BusinessCard.swift in Sources */,
+				55B3D93E303B4DA8006D69CF /* ExhibitionManagerView.swift in Sources */,
+				451C7864E9EDF9641E982AB3 /* BusinessCardImportView.swift in Sources */,
+				A5772F640BE3185CA4BB0DA9 /* BusinessCardPanelView.swift in Sources */,
+				F07BB50B71E1826163732A6A /* BusinessCardParser.swift in Sources */,
+				5577F1373041C76D00F4E0AD /* MonthlyCalendarView.swift in Sources */,
+				5577F14D3044185B00F4E0AD /* NewNoteTemplateSheetView.swift in Sources */,
+				58356BDD617EDBB9A55BF869 /* BusinessCardResultView.swift in Sources */,
+				5598C340303DFBDA00C46FE1 /* TaskFormView.swift in Sources */,
+				CE088CC9C24D212EB27DE710 /* CloudSyncService.swift in Sources */,
+				B2CA9255325D14608E15C627 /* ContentView.swift in Sources */,
+				1465D4C43A408DC508DBBED9 /* CustomCategory.swift in Sources */,
+				373CEFBA19B6AA1AE669D634 /* EmptyStateView.swift in Sources */,
+				5577F1513044202F00F4E0AD /* CustomNoteTemplateView.swift in Sources */,
+				5577F14930433BDF00F4E0AD /* ExhibitionAddWindowView.swift in Sources */,
+				5577F14F30441FB300F4E0AD /* CustomNoteTemplate.swift in Sources */,
+				D367230C18B3B5A58BDA19F6 /* ExcelExportService.swift in Sources */,
+				90B9AFB527BB8B7CEDA06C00 /* ExhibitionPreset.swift in Sources */,
+				5577F1453043252400F4E0AD /* BusinessCardCameraController.swift in Sources */,
+				EC10F2B9AF641D170EC8A7FA /* ExhibitionTemplateView.swift in Sources */,
+				71B8302EE6244A09A9817D8D /* ExportSheetView.swift in Sources */,
+				C2846D9B3531D8678D499FA7 /* MeetingMinutesTemplateView.swift in Sources */,
+				5577F14B304411FF00F4E0AD /* CircularToolbarIcon.swift in Sources */,
+				1A3AAB2A85EF5D95192F01F9 /* NSImage+Extensions.swift in Sources */,
+				504E0DCFAED9DD9BEF5D69B9 /* Note.swift in Sources */,
+				0A7621A7240B321FD80222EE /* NoteCategory.swift in Sources */,
+				E5033AC89452E0E3F26BDCA1 /* NoteDetailView.swift in Sources */,
+				5577F1393041C78800F4E0AD /* ExhibitionDetailView.swift in Sources */,
+				5598C33C303DF7F500C46FE1 /* CardLinkButton.swift in Sources */,
+				553183D93045A8E500E228C5 /* AutoHeightTextEditor.swift in Sources */,
+				5577F14130426D6000F4E0AD /* BusinessCardOCRReview.swift in Sources */,
+				5577F13F3041F0EE00F4E0AD /* CalendarReminderSyncService.swift in Sources */,
+				5577F1473043253E00F4E0AD /* BusinessCardCameraCaptureView.swift in Sources */,
+				5598C334303D6CD900C46FE1 /* ContactPickerButton.swift in Sources */,
+				5598C338303D6DF500C46FE1 /* MinimalZipWriter.swift in Sources */,
+				5577F15330445AB000F4E0AD /* BusinessCardImageProcessor.swift in Sources */,
+				A746A84FCBE1CD59C4E6FC93 /* NoteListView.swift in Sources */,
+				5598C33E303DF86200C46FE1 /* BusinessCardManagerView.swift in Sources */,
+				6923C33ACAA9305D23B9261B /* NoteTemplate.swift in Sources */,
+				5577F13530408B0200F4E0AD /* BusinessCardDetailView.swift in Sources */,
+				FF560235C5CAD20D00EF319B /* OCRService.swift in Sources */,
+				956B082C2B87A1D437636CBD /* SettingsExportView.swift in Sources */,
+				1C0B382164C8031ADACBF31B /* SettingsICloudView.swift in Sources */,
+				7215B7F821D9BDB1FA2864AC /* SettingsView.swift in Sources */,
+				3F8CB95F5B47F472B21AB208 /* SidebarView.swift in Sources */,
+				5598C336303D6D2200C46FE1 /* LocationPickerSheet.swift in Sources */,
+				5598C33A303D6E1C00C46FE1 /* PDFExportService.swift in Sources */,
+				5577F13B3041C7EB00F4E0AD /* CircleCheckToggleStyle.swift in Sources */,
+				8BA6AA3041F641B39BEE7131 /* SyncStatusView.swift in Sources */,
+				FE21A195D3F98BE383599135 /* TagEditorView.swift in Sources */,
+				2E5A3DE0D8EF438361B92A65 /* WorkLogTemplateView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		25012346207C507145ED1611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BizNoteMac/BizNoteMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BizNoteMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fakuku.biznote.mac;
+				PRODUCT_NAME = BizNote;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		3FB92309D62B25E4C9BB14BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8S2Y83DCGM;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		5857F755EC9D66C51561A6A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BizNoteMac/BizNoteMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BizNoteMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fakuku.biznote.mac;
+				PRODUCT_NAME = BizNote;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		881BC6BBDFF2A120E0F1F8E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8S2Y83DCGM;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BF806F7775391556696F5C2 /* Build configuration list for PBXProject "BizNoteMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB92309D62B25E4C9BB14BD /* Debug */,
+				881BC6BBDFF2A120E0F1F8E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6730F861AD4C49B0B684C10F /* Build configuration list for PBXNativeTarget "BizNoteMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5857F755EC9D66C51561A6A9 /* Debug */,
+				25012346207C507145ED1611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64CD7FF642187410F5D79EB2 /* Project object */;
+}
