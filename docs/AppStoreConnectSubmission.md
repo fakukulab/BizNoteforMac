@@ -73,21 +73,15 @@ macOS용 BizNote 첫 출시입니다.
 
 ### Support URL
 
-TODO: GitHub Pages support URL 입력
-
-Recommended path: `/support`
+https://fakukulab.github.io/BizNoteforMac/support.html
 
 ### Marketing URL
 
-TODO: GitHub Pages macOS product URL 입력
-
-Recommended path: `/mac`
+https://fakukulab.github.io/BizNoteforMac/
 
 ### Privacy Policy URL
 
-TODO: GitHub Pages privacy URL 입력
-
-Recommended path: `/privacy`
+https://fakukulab.github.io/BizNoteforMac/privacy.html
 
 ### Copyright
 
@@ -148,6 +142,34 @@ Recommended screenshots:
 4. Exhibition management screen
 5. Export or iCloud settings screen
 
+## Build Upload
+
+Use the Xcode 26 Mac that successfully archives this project.
+
+Archive for App Store Connect:
+
+```sh
+xcodebuild archive \
+    -project BizNoteMac.xcodeproj \
+    -scheme BizNoteMac \
+    -configuration Release \
+    -destination 'generic/platform=macOS' \
+    -archivePath build/BizNoteMac-AppStore.xcarchive \
+    -allowProvisioningUpdates
+```
+
+Upload the archive to App Store Connect:
+
+```sh
+xcodebuild -exportArchive \
+    -archivePath build/BizNoteMac-AppStore.xcarchive \
+    -exportPath build/AppStoreConnect \
+    -exportOptionsPlist Distribution/ExportOptions-AppStoreConnect.plist \
+    -allowProvisioningUpdates
+```
+
+After upload, wait for App Store Connect processing to finish, then select the processed build in the `1.0` macOS version page.
+
 ## Final Submit Checklist
 
 - App record created for macOS
@@ -165,4 +187,3 @@ Recommended screenshots:
 - Uploaded build selected
 - App Review contact information entered
 - Submit for Review clicked
-
