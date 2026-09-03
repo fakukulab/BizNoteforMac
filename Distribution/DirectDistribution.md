@@ -30,7 +30,11 @@ security find-identity -v -p codesigning | grep 'Developer ID Application'
 For manual notarization, also create a notarytool profile once:
 
 ```sh
-xcrun notarytool store-credentials BizNoteMac
+xcrun notarytool store-credentials BizNoteMac \
+    --apple-id kimjyun@me.com \
+    --team-id 8S2Y83DCGM \
+    --keychain ~/Library/Keychains/login.keychain-db \
+    --validate
 ```
 
 Archive the app:
@@ -59,7 +63,10 @@ If you notarize manually, compress the exported app before upload:
 
 ```sh
 ditto -c -k --keepParent build/DeveloperID/BizNote.app build/DeveloperID/BizNote.zip
-xcrun notarytool submit build/DeveloperID/BizNote.zip --keychain-profile BizNoteMac --wait
+xcrun notarytool submit build/DeveloperID/BizNote.zip \
+    --keychain-profile BizNoteMac \
+    --keychain ~/Library/Keychains/login.keychain-db \
+    --wait
 xcrun stapler staple build/DeveloperID/BizNote.app
 spctl -vvv --assess --type exec build/DeveloperID/BizNote.app
 ```
@@ -71,6 +78,6 @@ The machine exporting the app needs access to the Apple Developer team `8S2Y83DC
 - Xcode IDE build succeeded through the Xcode build tool.
 - Command-line `xcodebuild archive` is currently blocked on this Mac by Xcode 27 beta macro server errors such as `SwiftDataMacros.PersistentModelMacro` and `SwiftUIMacros.StateMacro` reporting `swift-plugin-server produced malformed response`.
 - `security find-identity -v -p codesigning` lists `Developer ID Application: Jyun Kim (8S2Y83DCGM)`.
-- A `BizNoteMac` notarytool keychain profile was not found.
+- `xcrun notarytool history --keychain-profile BizNoteMac --keychain ~/Library/Keychains/login.keychain-db` succeeds and currently reports `No submission history`.
 
-Resolve the Xcode beta/toolchain issue and create the notarytool profile before producing the first public direct-distribution build.
+Resolve the Xcode beta/toolchain issue before producing the first public direct-distribution build.
