@@ -21,14 +21,28 @@ BizNote can be distributed outside the Mac App Store as a Developer ID signed an
 
 ## Command-line export
 
+Before exporting from the command line, verify that this Mac has a Developer ID signing identity:
+
+```sh
+security find-identity -v -p codesigning | grep 'Developer ID Application'
+```
+
+For manual notarization, also create a notarytool profile once:
+
+```sh
+xcrun notarytool store-credentials BizNoteMac
+```
+
 Archive the app:
 
 ```sh
 xcodebuild archive \
+    -project BizNoteMac.xcodeproj \
     -scheme BizNoteMac \
     -configuration Release \
     -destination 'generic/platform=macOS' \
-    -archivePath build/BizNoteMac.xcarchive
+    -archivePath build/BizNoteMac.xcarchive \
+    -allowProvisioningUpdates
 ```
 
 Export a Developer ID signed app from the archive:
@@ -45,9 +59,18 @@ If you notarize manually, compress the exported app before upload:
 
 ```sh
 ditto -c -k --keepParent build/DeveloperID/BizNote.app build/DeveloperID/BizNote.zip
-xcrun notarytool submit build/DeveloperID/BizNote.zip --keychain-profile <profile-name> --wait
+xcrun notarytool submit build/DeveloperID/BizNote.zip --keychain-profile BizNoteMac --wait
 xcrun stapler staple build/DeveloperID/BizNote.app
 spctl -vvv --assess --type exec build/DeveloperID/BizNote.app
 ```
 
 The machine exporting the app needs access to the Apple Developer team `8S2Y83DCGM`, a Developer ID Application certificate, and a notarytool keychain profile if using the manual notarization commands.
+
+## 2026-09-03 local verification
+
+- Xcode IDE build succeeded through the Xcode build tool.
+- Command-line `xcodebuild archive` is currently blocked on this Mac by Xcode 27 beta macro server errors such as `SwiftDataMacros.PersistentModelMacro` and `SwiftUIMacros.StateMacro` reporting `swift-plugin-server produced malformed response`.
+- `security find-identity -v -p codesigning` did not list a `Developer ID Application` identity.
+- A `BizNoteMac` notarytool keychain profile was not found.
+
+Resolve the Xcode beta/toolchain issue and install the Developer ID certificate before producing the first public direct-distribution build.
